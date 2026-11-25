@@ -1,0 +1,5 @@
+Modelo,L,Unidades,Dropout,lr,F1 macro val. (%),Exactitud val. (%)
+SimpleRNN (base),200,128,0.3,0.001,15.62,16.43
+SimpleRNN (ajustado),400,256,0.3,0.001,26.43,27.80
+LSTM (base),200,128,0.3,0.001,53.75,54.24
+LSTM (ajustado),400,128,0.3,0.001,55.62,56.36

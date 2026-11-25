@@ -1,0 +1,7 @@
+# Versiones con las que se ejecutó la Entrega 2 (Google Colab): TensorFlow 2.21.0, Keras 3.13.2,
+# scikit-learn 1.6.1, Python 3.13. Con estas cotas mínimas también corre en un equipo local.
+tensorflow>=2.16
+keras>=3.0
+scikit-learn>=1.3
+numpy>=1.26
+matplotlib>=3.8

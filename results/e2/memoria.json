@@ -1,0 +1,246 @@
+{
+  "frases": [
+    {
+      "texto": "NASA rover detects evidence of liquid water and atmosphere on Mars.",
+      "clase": "sci.space"
+    },
+    {
+      "texto": "The engine needs a new oil filter and spark plugs for better mileage.",
+      "clase": "rec.autos"
+    },
+    {
+      "texto": "The goalie made forty saves and the hockey team won the playoff game in overtime.",
+      "clase": "rec.sport.hockey"
+    },
+    {
+      "texto": "The doctor prescribed antibiotics because the patient had a bacterial infection.",
+      "clase": "sci.med"
+    },
+    {
+      "texto": "For sale: used laptop in good condition, asking 300 dollars plus shipping.",
+      "clase": "misc.forsale"
+    },
+    {
+      "texto": "The pitcher threw a perfect game and the batter hit a home run in the ninth inning.",
+      "clase": "rec.sport.baseball"
+    },
+    {
+      "texto": "Israeli and Palestinian leaders met to discuss the peace process in the region.",
+      "clase": "talk.politics.mideast"
+    },
+    {
+      "texto": "I need software to render 3D images and convert them to GIF and JPEG formats.",
+      "clase": "comp.graphics"
+    }
+  ],
+  "distancias": [
+    0,
+    10,
+    25,
+    50,
+    100,
+    150,
+    200,
+    300
+  ],
+  "rellenos": [
+    "I have been thinking about this for a while and I wanted to share a few thoughts with everyone here.",
+    "Please let me know if you have any questions or comments about this and I will try to answer as soon as possible.",
+    "Yesterday we went out for a long walk with some friends and then we talked for hours about many different things."
+  ],
+  "casos_por_distancia": 24,
+  "modelos": {
+    "MLP (E1)": {
+      "prob_media": [
+        0.9858980178833008,
+        0.9821599125862122,
+        0.9655002951622009,
+        0.9073663353919983,
+        0.8036295771598816,
+        0.7320464253425598,
+        0.6830808520317078,
+        0.6170417666435242
+      ],
+      "aciertos": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "aciertos_por_relleno": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    "SimpleRNN": {
+      "prob_media": [
+        0.377962589263916,
+        0.21587444841861725,
+        0.1334296464920044,
+        0.06630530208349228,
+        0.03936589136719704,
+        0.04459979012608528,
+        0.040652696043252945,
+        0.03540096804499626
+      ],
+      "aciertos": [
+        0.5,
+        0.3333333333333333,
+        0.20833333333333334,
+        0.041666666666666664,
+        0.0,
+        0.0,
+        0.041666666666666664,
+        0.0
+      ],
+      "aciertos_por_relleno": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.25,
+          0.375,
+          0.375
+        ],
+        [
+          0.125,
+          0.25,
+          0.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.125,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "LSTM": {
+      "prob_media": [
+        0.9336588978767395,
+        0.9200662970542908,
+        0.6740498542785645,
+        0.2272166758775711,
+        0.12761688232421875,
+        0.09570934623479843,
+        0.08987846225500107,
+        0.061410531401634216
+      ],
+      "aciertos": [
+        1.0,
+        1.0,
+        0.8333333333333334,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.125,
+        0.125,
+        0.08333333333333333
+      ],
+      "aciertos_por_relleno": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.75,
+          1.0,
+          0.75
+        ],
+        [
+          0.0,
+          0.25,
+          0.25
+        ],
+        [
+          0.125,
+          0.25,
+          0.125
+        ],
+        [
+          0.0,
+          0.25,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.0,
+          0.125,
+          0.125
+        ]
+      ]
+    }
+  }
+}

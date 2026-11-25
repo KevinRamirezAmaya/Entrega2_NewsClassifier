@@ -1,0 +1,134 @@
+{
+  "documentos": {
+    "train": 9616,
+    "val": 1698,
+    "test": 7532
+  },
+  "longitud_tokens": {
+    "train": {
+      "media": 180.27298252911814,
+      "mediana": 81.0,
+      "p25": 40.0,
+      "p75": 165.0,
+      "p90": 336.0,
+      "p95": 570.25,
+      "maximo": 11669
+    },
+    "val": {
+      "media": 193.3457008244994,
+      "mediana": 83.0,
+      "p25": 39.0,
+      "p75": 160.0,
+      "p90": 294.4999999999998,
+      "p95": 518.4999999999986,
+      "maximo": 10052
+    },
+    "test": {
+      "media": 172.28040361125863,
+      "mediana": 81.0,
+      "p25": 39.0,
+      "p75": 161.0,
+      "p90": 318.8000000000011,
+      "p95": 534.4499999999998,
+      "maximo": 9377
+    }
+  },
+  "pct_truncados_train": {
+    "100": 42.20049916805325,
+    "200": 19.633943427620633,
+    "300": 11.720049916805324,
+    "400": 7.778702163061564
+  },
+  "pct_completos_train": {
+    "100": 57.79950083194676,
+    "200": 80.36605657237936,
+    "300": 88.27995008319468,
+    "400": 92.22129783693843
+  },
+  "vocabulario_train_total": 96153,
+  "cobertura_val": {
+    "10000": 0.8945906348137836,
+    "20000": 0.9269237681274196,
+    "30000": 0.9398539754676349
+  },
+  "vacios": {
+    "train": 261,
+    "val": 49,
+    "test": 223
+  },
+  "razon_S_W": {
+    "S": 9616,
+    "W_media": 180.27298252911814,
+    "W_mediana": 81.0,
+    "S_sobre_W_media": 53.341326387867355,
+    "S_sobre_W_mediana": 118.71604938271605
+  },
+  "clases": {
+    "train": {
+      "alt.atheism": 408,
+      "comp.graphics": 496,
+      "comp.os.ms-windows.misc": 502,
+      "comp.sys.ibm.pc.hardware": 502,
+      "comp.sys.mac.hardware": 491,
+      "comp.windows.x": 504,
+      "misc.forsale": 497,
+      "rec.autos": 505,
+      "rec.motorcycles": 508,
+      "rec.sport.baseball": 508,
+      "rec.sport.hockey": 510,
+      "sci.crypt": 506,
+      "sci.electronics": 502,
+      "sci.med": 505,
+      "sci.space": 504,
+      "soc.religion.christian": 509,
+      "talk.politics.guns": 464,
+      "talk.politics.mideast": 479,
+      "talk.politics.misc": 395,
+      "talk.religion.misc": 321
+    },
+    "val": {
+      "alt.atheism": 72,
+      "comp.graphics": 88,
+      "comp.os.ms-windows.misc": 89,
+      "comp.sys.ibm.pc.hardware": 88,
+      "comp.sys.mac.hardware": 87,
+      "comp.windows.x": 89,
+      "misc.forsale": 88,
+      "rec.autos": 89,
+      "rec.motorcycles": 90,
+      "rec.sport.baseball": 89,
+      "rec.sport.hockey": 90,
+      "sci.crypt": 89,
+      "sci.electronics": 89,
+      "sci.med": 89,
+      "sci.space": 89,
+      "soc.religion.christian": 90,
+      "talk.politics.guns": 82,
+      "talk.politics.mideast": 85,
+      "talk.politics.misc": 70,
+      "talk.religion.misc": 56
+    },
+    "test": {
+      "alt.atheism": 319,
+      "comp.graphics": 389,
+      "comp.os.ms-windows.misc": 394,
+      "comp.sys.ibm.pc.hardware": 392,
+      "comp.sys.mac.hardware": 385,
+      "comp.windows.x": 395,
+      "misc.forsale": 390,
+      "rec.autos": 396,
+      "rec.motorcycles": 398,
+      "rec.sport.baseball": 397,
+      "rec.sport.hockey": 399,
+      "sci.crypt": 396,
+      "sci.electronics": 393,
+      "sci.med": 396,
+      "sci.space": 394,
+      "soc.religion.christian": 398,
+      "talk.politics.guns": 364,
+      "talk.politics.mideast": 376,
+      "talk.politics.misc": 310,
+      "talk.religion.misc": 251
+    }
+  }
+}

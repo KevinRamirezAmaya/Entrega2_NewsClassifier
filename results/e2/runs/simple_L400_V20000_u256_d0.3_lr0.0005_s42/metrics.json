@@ -1,0 +1,39 @@
+{
+  "run_id": "simple_L400_V20000_u256_d0.3_lr0.0005_s42",
+  "phase": "ajuste_lr",
+  "config": {
+    "seq_len": 400,
+    "vocab_size": 20000,
+    "embed_dim": 100,
+    "units": 256,
+    "dropout": 0.3,
+    "lr": 0.0005,
+    "clipnorm": 1.0,
+    "epochs": 30,
+    "batch_size": 64,
+    "seed": 42,
+    "cell": "simple"
+  },
+  "params": {
+    "total": 2096532,
+    "entrenables": 2096532,
+    "no_entrenables": 0
+  },
+  "epochs_run": 9,
+  "best_epoch": 5,
+  "train_time_sec": 73.56541342999992,
+  "sec_per_epoch": 8.173934825555547,
+  "val": {
+    "loss": 2.4574873447418213,
+    "accuracy": 0.20730270906949352,
+    "f1_macro": 0.18890195765355933,
+    "f1_weighted": 0.1911500939337858,
+    "precision_macro": 0.19969494476452562,
+    "recall_macro": 0.20362094933546476
+  },
+  "empty_docs": {
+    "train": 261,
+    "val": 49,
+    "test": 223
+  }
+}

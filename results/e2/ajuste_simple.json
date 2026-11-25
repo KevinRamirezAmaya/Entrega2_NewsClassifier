@@ -1,0 +1,189 @@
+{
+  "cell": "simple",
+  "min_gain": 0.005,
+  "base_config": {
+    "seq_len": 200,
+    "vocab_size": 20000,
+    "embed_dim": 100,
+    "units": 128,
+    "dropout": 0.3,
+    "lr": 0.001,
+    "clipnorm": 1.0,
+    "epochs": 30,
+    "batch_size": 64,
+    "seed": 42,
+    "cell": "simple"
+  },
+  "base_run": "simple_L200_V20000_u128_d0.3_lr0.001_s42",
+  "base_val": {
+    "loss": 2.5530271530151367,
+    "accuracy": 0.16431095406360424,
+    "f1_macro": 0.1561819921392444,
+    "f1_weighted": 0.1593752901910112,
+    "precision_macro": 0.1622777696624317,
+    "recall_macro": 0.16051350457900132
+  },
+  "pasos": [
+    {
+      "parametro": "seq_len",
+      "pruebas": [
+        {
+          "valor": 100,
+          "run_id": "simple_L100_V20000_u128_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.12927832295356687,
+          "val_accuracy": 0.14782096584216725,
+          "val_loss": 2.562621831893921,
+          "mejor_epoca": 2,
+          "s_por_epoca": 2.994792125666663
+        },
+        {
+          "valor": 200,
+          "run_id": "simple_L200_V20000_u128_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.1561819921392444,
+          "val_accuracy": 0.16431095406360424,
+          "val_loss": 2.5530271530151367,
+          "mejor_epoca": 3,
+          "s_por_epoca": 6.003947666428571
+        },
+        {
+          "valor": 400,
+          "run_id": "simple_L400_V20000_u128_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.16932907741467562,
+          "val_accuracy": 0.17491166077738515,
+          "val_loss": 2.523421287536621,
+          "mejor_epoca": 3,
+          "s_por_epoca": 6.530187316714286
+        }
+      ],
+      "anterior": 200,
+      "elegido": 400,
+      "ganancia": 0.013147085275431208,
+      "adoptado": true,
+      "razon": "400 mejora el F1 macro de validaci\u00f3n en 1.31 puntos"
+    },
+    {
+      "parametro": "units",
+      "pruebas": [
+        {
+          "valor": 64,
+          "run_id": "simple_L400_V20000_u64_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.16425699482035394,
+          "val_accuracy": 0.1772673733804476,
+          "val_loss": 2.5193161964416504,
+          "mejor_epoca": 2,
+          "s_por_epoca": 7.373592451666667
+        },
+        {
+          "valor": 128,
+          "run_id": "simple_L400_V20000_u128_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.16932907741467562,
+          "val_accuracy": 0.17491166077738515,
+          "val_loss": 2.523421287536621,
+          "mejor_epoca": 3,
+          "s_por_epoca": 6.530187316714286
+        },
+        {
+          "valor": 256,
+          "run_id": "simple_L400_V20000_u256_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.2643153032980717,
+          "val_accuracy": 0.2779740871613663,
+          "val_loss": 2.2059059143066406,
+          "mejor_epoca": 13,
+          "s_por_epoca": 6.856118974117645
+        }
+      ],
+      "anterior": 128,
+      "elegido": 256,
+      "ganancia": 0.09498622588339606,
+      "adoptado": true,
+      "razon": "256 mejora el F1 macro de validaci\u00f3n en 9.50 puntos"
+    },
+    {
+      "parametro": "dropout",
+      "pruebas": [
+        {
+          "valor": 0.2,
+          "run_id": "simple_L400_V20000_u256_d0.2_lr0.001_s42",
+          "val_f1_macro": 0.229356168058521,
+          "val_accuracy": 0.2396937573616019,
+          "val_loss": 2.462502956390381,
+          "mejor_epoca": 8,
+          "s_por_epoca": 6.8421609303333355
+        },
+        {
+          "valor": 0.3,
+          "run_id": "simple_L400_V20000_u256_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.2643153032980717,
+          "val_accuracy": 0.2779740871613663,
+          "val_loss": 2.2059059143066406,
+          "mejor_epoca": 13,
+          "s_por_epoca": 6.856118974117645
+        },
+        {
+          "valor": 0.5,
+          "run_id": "simple_L400_V20000_u256_d0.5_lr0.001_s42",
+          "val_f1_macro": 0.19934853567254712,
+          "val_accuracy": 0.19964664310954064,
+          "val_loss": 2.487666368484497,
+          "mejor_epoca": 6,
+          "s_por_epoca": 7.514985707700009
+        }
+      ],
+      "anterior": 0.3,
+      "elegido": 0.3,
+      "ganancia": 0.0,
+      "adoptado": false,
+      "razon": "ning\u00fan valor mejora m\u00e1s de 0.5 puntos; se mantiene 0.3"
+    },
+    {
+      "parametro": "lr",
+      "pruebas": [
+        {
+          "valor": 0.001,
+          "run_id": "simple_L400_V20000_u256_d0.3_lr0.001_s42",
+          "val_f1_macro": 0.2643153032980717,
+          "val_accuracy": 0.2779740871613663,
+          "val_loss": 2.2059059143066406,
+          "mejor_epoca": 13,
+          "s_por_epoca": 6.856118974117645
+        },
+        {
+          "valor": 0.0005,
+          "run_id": "simple_L400_V20000_u256_d0.3_lr0.0005_s42",
+          "val_f1_macro": 0.18890195765355933,
+          "val_accuracy": 0.20730270906949352,
+          "val_loss": 2.4574873447418213,
+          "mejor_epoca": 5,
+          "s_por_epoca": 8.173934825555547
+        }
+      ],
+      "anterior": 0.001,
+      "elegido": 0.001,
+      "ganancia": 0.0,
+      "adoptado": false,
+      "razon": "ning\u00fan valor mejora m\u00e1s de 0.5 puntos; se mantiene 0.001"
+    }
+  ],
+  "config_final": {
+    "seq_len": 400,
+    "vocab_size": 20000,
+    "embed_dim": 100,
+    "units": 256,
+    "dropout": 0.3,
+    "lr": 0.001,
+    "clipnorm": 1.0,
+    "epochs": 30,
+    "batch_size": 64,
+    "seed": 42,
+    "cell": "simple"
+  },
+  "final_run": "simple_L400_V20000_u256_d0.3_lr0.001_s42",
+  "final_val": {
+    "loss": 2.2059059143066406,
+    "accuracy": 0.2779740871613663,
+    "f1_macro": 0.2643153032980717,
+    "f1_weighted": 0.2699046667436667,
+    "precision_macro": 0.28833617109645665,
+    "recall_macro": 0.2707181556926138
+  }
+}

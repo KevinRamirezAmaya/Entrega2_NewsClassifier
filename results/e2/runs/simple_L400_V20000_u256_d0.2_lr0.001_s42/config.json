@@ -1,0 +1,30 @@
+{
+  "config": {
+    "seq_len": 400,
+    "vocab_size": 20000,
+    "embed_dim": 100,
+    "units": 256,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "clipnorm": 1.0,
+    "epochs": 30,
+    "batch_size": 64,
+    "seed": 42,
+    "cell": "simple"
+  },
+  "phase": "ajuste_dropout",
+  "entorno": {
+    "python": "3.13.16",
+    "tensorflow": "2.21.0",
+    "keras": "3.13.2",
+    "numpy": "2.4.6",
+    "scikit_learn": "1.6.1",
+    "sistema": "Linux 6.6.159+",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "nucleos_cpu": 2,
+    "ram_gb": 13.6,
+    "gpu": [
+      "Tesla T4"
+    ]
+  }
+}

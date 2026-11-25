@@ -1,0 +1,5 @@
+| Modelo | Exactitud (%) | F1 macro (%) | Semillas |
+|---|---|---|---|
+| MLP Tuned (re-entrenado) | 67.44 ± 0.28 | 66.33 ± 0.17 | 42, 1, 7, 123 |
+| SimpleRNN (ajustada) | 22.14 ± 2.24 | 20.73 ± 2.43 | 42, 1, 7, 123 |
+| LSTM (ajustada) | 46.84 ± 2.80 | 46.11 ± 2.97 | 42, 1, 7, 123 |

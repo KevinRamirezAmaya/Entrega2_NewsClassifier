@@ -1,0 +1,401 @@
+{
+  "finales": {
+    "simple": {
+      "config": {
+        "seq_len": 400,
+        "vocab_size": 20000,
+        "embed_dim": 100,
+        "units": 256,
+        "dropout": 0.3,
+        "lr": 0.001,
+        "clipnorm": 1.0,
+        "epochs": 30,
+        "batch_size": 64,
+        "seed": 42,
+        "cell": "simple"
+      },
+      "params": {
+        "total": 2096532,
+        "entrenables": 2096532,
+        "no_entrenables": 0
+      },
+      "epochs_run": 17,
+      "best_epoch": 13,
+      "sec_per_epoch": 6.856118974117645,
+      "train_time_sec": 116.55402255999996,
+      "val": {
+        "loss": 2.2059059143066406,
+        "accuracy": 0.2779740871613663,
+        "f1_macro": 0.2643153032980717,
+        "f1_weighted": 0.2699046667436667,
+        "precision_macro": 0.28833617109645665,
+        "recall_macro": 0.2707181556926138
+      },
+      "test": {
+        "loss": 2.3644464015960693,
+        "accuracy": 0.2521242697822623,
+        "f1_macro": 0.23965082636741433,
+        "f1_weighted": 0.24297158408166553,
+        "precision_macro": 0.2658045355419826,
+        "recall_macro": 0.24640167763290477
+      }
+    },
+    "lstm": {
+      "config": {
+        "seq_len": 400,
+        "vocab_size": 20000,
+        "embed_dim": 100,
+        "units": 128,
+        "dropout": 0.3,
+        "lr": 0.001,
+        "clipnorm": 1.0,
+        "epochs": 30,
+        "batch_size": 64,
+        "seed": 42,
+        "cell": "lstm"
+      },
+      "params": {
+        "total": 2119828,
+        "entrenables": 2119828,
+        "no_entrenables": 0
+      },
+      "epochs_run": 13,
+      "best_epoch": 9,
+      "sec_per_epoch": 3.777826454076918,
+      "train_time_sec": 49.11174390299993,
+      "val": {
+        "loss": 1.6138194799423218,
+        "accuracy": 0.5636042402826855,
+        "f1_macro": 0.5562071604047161,
+        "f1_weighted": 0.5661298988877962,
+        "precision_macro": 0.5804224650961061,
+        "recall_macro": 0.5531970038930711
+      },
+      "test": {
+        "loss": 1.9130607843399048,
+        "accuracy": 0.5007966011683483,
+        "f1_macro": 0.4931844248947949,
+        "f1_weighted": 0.5031035021164214,
+        "precision_macro": 0.51461346955517,
+        "recall_macro": 0.49082179808293214
+      }
+    }
+  },
+  "semillas": {
+    "mlp": {
+      "por_semilla": [
+        {
+          "seed": 42,
+          "accuracy": 0.6773765087127686,
+          "f1_macro": 0.6657962283899299
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.6720658540725708,
+          "f1_macro": 0.6619280270114083
+        },
+        {
+          "seed": 7,
+          "accuracy": 0.671933114528656,
+          "f1_macro": 0.6625398080589848
+        },
+        {
+          "seed": 123,
+          "accuracy": 0.6763144135475159,
+          "f1_macro": 0.6631208425265787
+        }
+      ],
+      "accuracy": {
+        "media": 0.6744224727153778,
+        "desv": 0.0028317441266008953
+      },
+      "f1_macro": {
+        "media": 0.6633462264967254,
+        "desv": 0.0017043970280411441
+      }
+    },
+    "simple": {
+      "cell": "simple",
+      "por_semilla": [
+        {
+          "seed": 42,
+          "accuracy": 0.2521242697822623,
+          "f1_macro": 0.23965082636741433
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.2170738183749336,
+          "f1_macro": 0.2104724431383537
+        },
+        {
+          "seed": 7,
+          "accuracy": 0.1983536909187467,
+          "f1_macro": 0.18335214601298247
+        },
+        {
+          "seed": 123,
+          "accuracy": 0.2180031864046734,
+          "f1_macro": 0.19562672834749645
+        }
+      ],
+      "accuracy": {
+        "media": 0.22138874137015402,
+        "desv": 0.022400645816206356
+      },
+      "f1_macro": {
+        "media": 0.20727553596656173,
+        "desv": 0.024265221681943647
+      }
+    },
+    "lstm": {
+      "cell": "lstm",
+      "por_semilla": [
+        {
+          "seed": 42,
+          "accuracy": 0.5007966011683483,
+          "f1_macro": 0.4931844248947949
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.44835369091874666,
+          "f1_macro": 0.43580561779222043
+        },
+        {
+          "seed": 7,
+          "accuracy": 0.44184811471056823,
+          "f1_macro": 0.4358757123885025
+        },
+        {
+          "seed": 123,
+          "accuracy": 0.4824747742963356,
+          "f1_macro": 0.4796564362891507
+        }
+      ],
+      "accuracy": {
+        "media": 0.4683682952734997,
+        "desv": 0.02801483022852582
+      },
+      "f1_macro": {
+        "media": 0.46113054784116714,
+        "desv": 0.029719905633999066
+      }
+    }
+  },
+  "eleccion_semilla": {
+    "semilla_final": {
+      "simple": 42,
+      "lstm": 42
+    },
+    "por_semilla": {
+      "simple": {
+        "42": [
+          0.2643,
+          0.23965082636741433
+        ],
+        "1": [
+          0.2248,
+          0.2104724431383537
+        ],
+        "7": [
+          0.2125,
+          0.18335214601298247
+        ],
+        "123": [
+          0.2217,
+          0.19562672834749645
+        ]
+      },
+      "lstm": {
+        "42": [
+          0.5562,
+          0.4931844248947949
+        ],
+        "1": [
+          0.4956,
+          0.43580561779222043
+        ],
+        "7": [
+          0.4716,
+          0.4358757123885025
+        ],
+        "123": [
+          0.5531,
+          0.4796564362891507
+        ]
+      }
+    }
+  },
+  "mejor_rnn": "lstm",
+  "confusiones_principales": [
+    {
+      "real": "comp.windows.x",
+      "predicha": "comp.graphics",
+      "proporcion": 0.28354430379746837
+    },
+    {
+      "real": "talk.politics.misc",
+      "predicha": "talk.politics.guns",
+      "proporcion": 0.2806451612903226
+    },
+    {
+      "real": "talk.religion.misc",
+      "predicha": "soc.religion.christian",
+      "proporcion": 0.2749003984063745
+    },
+    {
+      "real": "comp.sys.ibm.pc.hardware",
+      "predicha": "comp.sys.mac.hardware",
+      "proporcion": 0.26785714285714285
+    },
+    {
+      "real": "rec.motorcycles",
+      "predicha": "rec.autos",
+      "proporcion": 0.23115577889447236
+    },
+    {
+      "real": "alt.atheism",
+      "predicha": "soc.religion.christian",
+      "proporcion": 0.2225705329153605
+    }
+  ],
+  "f1_por_clase": {
+    "MLP": {
+      "alt.atheism": 0.4685212298682284,
+      "comp.graphics": 0.6389850057670127,
+      "comp.os.ms-windows.misc": 0.6246575342465753,
+      "comp.sys.ibm.pc.hardware": 0.6124818577648766,
+      "comp.sys.mac.hardware": 0.6847960444993819,
+      "comp.windows.x": 0.7712418300653595,
+      "misc.forsale": 0.7777777777777778,
+      "rec.autos": 0.5687903970452447,
+      "rec.motorcycles": 0.7553041018387553,
+      "rec.sport.baseball": 0.8082901554404145,
+      "rec.sport.hockey": 0.8743718592964824,
+      "sci.crypt": 0.7683453237410072,
+      "sci.electronics": 0.5843828715365239,
+      "sci.med": 0.7548076923076923,
+      "sci.space": 0.741222366710013,
+      "soc.religion.christian": 0.7203791469194313,
+      "talk.politics.guns": 0.6122994652406417,
+      "talk.politics.mideast": 0.7971631205673759,
+      "talk.politics.misc": 0.509212730318258,
+      "talk.religion.misc": 0.24289405684754523
+    },
+    "SimpleRNN": {
+      "alt.atheism": 0.16113744075829384,
+      "comp.graphics": 0.15384615384615385,
+      "comp.os.ms-windows.misc": 0.22661870503597123,
+      "comp.sys.ibm.pc.hardware": 0.2100456621004566,
+      "comp.sys.mac.hardware": 0.18061674008810572,
+      "comp.windows.x": 0.24242424242424243,
+      "misc.forsale": 0.5568326947637292,
+      "rec.autos": 0.23887079261672095,
+      "rec.motorcycles": 0.3046757164404223,
+      "rec.sport.baseball": 0.2922201138519924,
+      "rec.sport.hockey": 0.3693304535637149,
+      "sci.crypt": 0.2870999030067895,
+      "sci.electronics": 0.15764705882352942,
+      "sci.med": 0.16338880484114976,
+      "sci.space": 0.21385542168674698,
+      "soc.religion.christian": 0.3029472241261138,
+      "talk.politics.guns": 0.2037037037037037,
+      "talk.politics.mideast": 0.1952,
+      "talk.politics.misc": 0.1576923076923077,
+      "talk.religion.misc": 0.17486338797814208
+    },
+    "LSTM": {
+      "alt.atheism": 0.26885245901639343,
+      "comp.graphics": 0.42528735632183906,
+      "comp.os.ms-windows.misc": 0.4357864357864358,
+      "comp.sys.ibm.pc.hardware": 0.43923865300146414,
+      "comp.sys.mac.hardware": 0.5306122448979592,
+      "comp.windows.x": 0.5700787401574803,
+      "misc.forsale": 0.7021276595744681,
+      "rec.autos": 0.48395967002749773,
+      "rec.motorcycles": 0.5362517099863201,
+      "rec.sport.baseball": 0.6703755215577191,
+      "rec.sport.hockey": 0.7611044417767107,
+      "sci.crypt": 0.6018641810918774,
+      "sci.electronics": 0.3909952606635071,
+      "sci.med": 0.5435114503816794,
+      "sci.space": 0.5268817204301075,
+      "soc.religion.christian": 0.5272525027808677,
+      "talk.politics.guns": 0.36387782204515273,
+      "talk.politics.mideast": 0.5437201907790143,
+      "talk.politics.misc": 0.313953488372093,
+      "talk.religion.misc": 0.22795698924731184
+    }
+  },
+  "longitud": {
+    "cortes": [
+      40.0,
+      81.0,
+      165.0
+    ],
+    "exactitud": {
+      "mlp": [
+        0.4806122448979592,
+        0.6831521739130435,
+        0.7564035546262415,
+        0.80043980208906
+      ],
+      "simple": [
+        0.21224489795918366,
+        0.2733695652173913,
+        0.2718243596445374,
+        0.25288620120945576
+      ],
+      "lstm": [
+        0.38877551020408163,
+        0.5304347826086957,
+        0.5582854155776268,
+        0.5310610225398571
+      ]
+    }
+  },
+  "mlp_e2": {
+    "accuracy": 0.6773765087127686,
+    "f1_macro": 0.6657962283899299,
+    "precision_macro": 0.6802402184063155,
+    "recall_macro": 0.6646034082572906,
+    "params": 5256980,
+    "best_epoch": 3,
+    "epochs_run": 7,
+    "sec_per_epoch": 2.028836182185582
+  },
+  "eda": {
+    "longitud_train": {
+      "media": 180.27298252911814,
+      "mediana": 81.0,
+      "p25": 40.0,
+      "p75": 165.0,
+      "p90": 336.0,
+      "p95": 570.25,
+      "maximo": 11669
+    },
+    "vacios": {
+      "train": 261,
+      "val": 49,
+      "test": 223
+    },
+    "pct_completos_train": {
+      "100": 57.79950083194676,
+      "200": 80.36605657237936,
+      "300": 88.27995008319468,
+      "400": 92.22129783693843
+    },
+    "cobertura_val": {
+      "10000": 0.8945906348137836,
+      "20000": 0.9269237681274196,
+      "30000": 0.9398539754676349
+    },
+    "razon_S_W": {
+      "S": 9616,
+      "W_media": 180.27298252911814,
+      "W_mediana": 81.0,
+      "S_sobre_W_media": 53.341326387867355,
+      "S_sobre_W_mediana": 118.71604938271605
+    },
+    "vocabulario_train_total": 96153
+  }
+}

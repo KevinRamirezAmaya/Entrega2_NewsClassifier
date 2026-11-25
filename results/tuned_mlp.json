@@ -1,0 +1,18 @@
+{
+  "test_loss": 1.2086470127105713,
+  "accuracy": 0.6802973747253418,
+  "f1_macro": 0.6689671629319205,
+  "f1_weighted": 0.680634272550702,
+  "precision_macro": 0.6829770495182909,
+  "recall_macro": 0.6679155138506698,
+  "model_name": "tuned_mlp",
+  "vocab_size": 10000,
+  "hidden_dim": 512,
+  "dropout": 0.3,
+  "l2_reg": 5e-05,
+  "lr": 0.0005,
+  "epochs": 25,
+  "batch_size": 64,
+  "training_time_sec": 133.4211642742157,
+  "curves_path": "results/learning_curves_tuned_mlp.png"
+}

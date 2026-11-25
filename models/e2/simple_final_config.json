@@ -1,0 +1,13 @@
+{
+  "seq_len": 400,
+  "vocab_size": 20000,
+  "embed_dim": 100,
+  "units": 256,
+  "dropout": 0.3,
+  "lr": 0.001,
+  "clipnorm": 1.0,
+  "epochs": 30,
+  "batch_size": 64,
+  "seed": 42,
+  "cell": "simple"
+}
